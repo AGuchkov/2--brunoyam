@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font;
+  }
+  
+  img {
+    display: block; // убираем отступ снизу
+    width: 100%;
+  }

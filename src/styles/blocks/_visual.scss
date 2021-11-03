@@ -1,0 +1,39 @@
+.visual {
+    background-image: url('../images/visual-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.visual-shadow {
+    background-color: $shadow;
+}
+
+.visual-inner {
+    @include container;
+    text-align: center;
+}
+
+.visual-title {
+    margin: 0 0 100px 0;
+    padding-top: 200px;
+    font-family: $font;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 98px;
+    color: $color-white;
+}
+
+.visual-link {
+    display: inline-block;
+    padding: 30px 48px;
+    margin-bottom: 214px;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 57px;
+    color: $color-white;
+    text-decoration: none;
+    background-color: $color-red;
+    border-radius: 6px;
+}
