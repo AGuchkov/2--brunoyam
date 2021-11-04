@@ -1,0 +1,20 @@
+.preview-cat {
+  background-color: rgba($color-dark, .01);
+}
+
+.preview-cat-inner {
+  @include container;
+  padding: 130px 0;
+  text-align: center;
+}
+
+.preview-cat-title {
+  margin-bottom: 100px;
+  font-family: $font;
+  font-size: 64px;
+  line-height: 87px;
+}
+
+.preview-cat-list {
+  margin-bottom: 120px;
+}

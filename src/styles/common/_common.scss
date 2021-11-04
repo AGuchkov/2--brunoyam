@@ -1,12 +1,13 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: $font;
-  }
-  
-  img {
-    display: block; // убираем отступ снизу
-    width: 100%;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  color: $color-dark;
+}
+
+img {
+  display: block; // убираем отступ снизу
+  width: 100%;
+}

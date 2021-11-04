@@ -1,0 +1,51 @@
+.footer {
+  background-color: $color-dark;
+}
+
+.footer-inner {
+  @include container;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    padding: 31px 0;
+  }
+}
+
+
+.phone {
+  font-family: $font;
+  font-size: 28px;
+  line-height: 38px;
+  color: $color-white;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  margin-left: 60px;
+  padding: 0;
+  list-style: none;
+}
+
+.social-item {
+  width: 26px;
+  height: 26px;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-link {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.social-text {
+  opacity: 0;
+}
