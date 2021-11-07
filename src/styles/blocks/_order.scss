@@ -1,0 +1,21 @@
+.order {
+  padding: 130px 0;
+  text-align: center;
+  background-color: rgba($color-dark, .1);
+}
+
+.order-inner {
+  @include container;
+}
+
+.order-title {
+  @include title-h2;
+  margin-bottom: 40px;
+}
+
+.order-text {
+  margin: 0;
+  margin-bottom: 90px;
+  font-size: 28px;
+  line-height: 38px;
+}

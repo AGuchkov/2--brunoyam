@@ -7,12 +7,13 @@
 
 .visual-shadow {
   background-color: $shadow;
+  margin-top: 90px;
+  padding: 200px 0 214px 0;
+  text-align: center;
 }
 
 .visual-inner {
   @include container;
-  padding: 200px 0 214px 0;
-  text-align: center;
 }
 
 .visual-title {

@@ -2,3 +2,10 @@
   max-width: $width;
   margin: 0 auto;
 }
+
+@mixin title-h2 {
+  margin: 0;
+  font-family: $font;
+  font-size: 64px;
+  line-height: 87px;
+}
