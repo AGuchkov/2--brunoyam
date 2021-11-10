@@ -1,7 +1,19 @@
 .cat {
-  padding: 220px 0 130px;
+  padding: 130px 0;
   text-align: center;
   background-color: rgba($color-dark, .01);
+
+  @media (max-width: $df-tablet) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 90px 0;
+  }
+}
+
+.cat-main {
+  padding: 220px 0 130px;
 }
 
 .cat-inner {
@@ -11,6 +23,14 @@
 .cat-title {
   @include title-h2;
   margin-bottom: 90px;
+
+  @media (max-width: $df-tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 50px;
+  }
 }
 
 .cat-title-category {
@@ -49,12 +69,26 @@
   margin-bottom: 120px;
   margin-left: -$indent-half-gap;
   margin-right: -$indent-half-gap;
+
+  @media (max-width: $df-tablet) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $df-mobile) {
+    display: block;
+    margin-bottom: 60px;
+  }
 }
 
 .cat-item {
   flex-basis: 25%;
   height: 304px;
   padding: $indent-half-gap;
+
+  @media (max-width: $df-tablet) {
+    flex-basis: 50%;
+    height: 364px;
+  }
 }
 
 .cat-item-bg {

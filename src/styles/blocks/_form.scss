@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   margin-left: -$indent-half-gap;
   margin-right: -$indent-half-gap;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
 }
 
 .form-field {
@@ -11,6 +15,19 @@
   flex-wrap: wrap;
   flex-basis: 33.33%;
   padding: 0 $indent-half-gap;
+
+  @media (max-width: $df-tablet) {
+    flex-basis: 50%;
+
+    &:last-child {
+      flex-basis: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-top: 30px;
+  }
 }
 
 .form-label {

@@ -1,6 +1,14 @@
 @mixin container($width: 1276px) {
   max-width: $width;
   margin: 0 auto;
+
+  @media (max-width: $df-tablet) {
+    padding: 0 10px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 0 16px;
+  }
 }
 
 @mixin title-h2 {
@@ -8,4 +16,14 @@
   font-family: $font;
   font-size: 64px;
   line-height: 87px;
+
+  @media (max-width: $df-tablet) {
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  @media (max-width: $df-mobile) {
+    font-size: 36px;
+    line-height: 49px;
+  }
 }

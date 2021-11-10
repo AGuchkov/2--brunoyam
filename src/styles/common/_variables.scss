@@ -15,3 +15,11 @@ $font: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 // indents
 $indent-gap: 20px;
 $indent-half-gap: $indent-gap / 2;
+
+// breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+
+$df-tablet: $desktop - 1;
+$df-mobile: $tablet - 1;

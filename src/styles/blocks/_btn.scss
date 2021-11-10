@@ -11,6 +11,13 @@
   background-color: $color-red;
   border-radius: 6px;
   border: none;
+
+  @media (max-width: $df-mobile) {
+    min-width: 278px;
+    padding: 20px 14px;
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
 .btn-form {
@@ -18,4 +25,20 @@
   padding: 34px 0 36px;
   font-size: 28px;
   line-height: 34px;
+}
+
+.arrow {
+  flex-shrink: 0;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  background-image: url("../images/icon-arrow.svg");
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-right {
+  transform: rotate(180deg);
 }

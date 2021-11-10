@@ -2,6 +2,14 @@
   padding: 130px 0;
   text-align: center;
   background-color: rgba($color-dark, .1);
+
+  @media (max-width: $df-tablet) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 90px 0;
+  }
 }
 
 .order-inner {
@@ -18,4 +26,9 @@
   margin-bottom: 90px;
   font-size: 28px;
   line-height: 38px;
+
+  @media (max-width: $df-mobile) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }

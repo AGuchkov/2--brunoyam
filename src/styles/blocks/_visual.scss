@@ -8,8 +8,17 @@
 .visual-shadow {
   background-color: $shadow;
   margin-top: 90px;
-  padding: 200px 0 214px 0;
+  padding: 200px 0 214px;
   text-align: center;
+
+  @media (max-width: $df-tablet) {
+    padding: 180px 0 190px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 110px 0 100px;
+    margin-top: 70px;
+  }
 }
 
 .visual-inner {
@@ -23,4 +32,14 @@
   font-size: 72px;
   line-height: 98px;
   color: $color-white;
+
+  @media (max-width: $df-tablet) {
+    font-size: 54px;
+    line-height: 74px;
+  }
+
+  @media (max-width: $df-mobile) {
+    font-size: 32px;
+    line-height: 44px;
+  }
 }

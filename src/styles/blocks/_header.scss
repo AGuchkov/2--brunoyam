@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10000;
   width: 100%;
   background-color: $color-dark;
 }
@@ -13,9 +14,14 @@
 .header-wrap {
   display: flex;
   align-items: center;
+
+  @media (max-width: $df-mobile) {
+    position: relative;
+  }
 }
 
 .logo {
+  display: block;
   margin-right: auto;
   font-family: $font;
   font-weight: 600;
@@ -23,4 +29,15 @@
   line-height: 57px;
   text-decoration: none;
   color: $color-white;
+
+  @media (max-width: $df-tablet) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 16px 0;
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
