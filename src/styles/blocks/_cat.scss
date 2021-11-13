@@ -4,11 +4,11 @@
   background-color: rgba($color-dark, .01);
 
   @media (max-width: $df-tablet) {
-    padding: 120px 0;
+    padding: 120px 10px;
   }
 
   @media (max-width: $df-mobile) {
-    padding: 90px 0;
+    padding: 90px 16px;
   }
 }
 

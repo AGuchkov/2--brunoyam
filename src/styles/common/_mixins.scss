@@ -2,13 +2,13 @@
   max-width: $width;
   margin: 0 auto;
 
-  @media (max-width: $df-tablet) {
-    padding: 0 10px;
-  }
+  // @media (max-width: $df-tablet) {
+  //   padding: 0 10px;
+  // }
 
-  @media (max-width: $df-mobile) {
-    padding: 0 16px;
-  }
+  // @media (max-width: $df-mobile) {
+  //   padding: 0 16px;
+  // }
 }
 
 @mixin title-h2 {

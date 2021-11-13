@@ -15,12 +15,19 @@
   display: flex;
   align-items: center;
 
+  @media (max-width: $df-tablet) {
+    padding: 0 10px;
+  }
+
   @media (max-width: $df-mobile) {
     position: relative;
+    padding: 0 16px;
   }
 }
 
 .logo {
+  position: relative;
+  z-index: 1000;
   display: block;
   margin-right: auto;
   font-family: $font;

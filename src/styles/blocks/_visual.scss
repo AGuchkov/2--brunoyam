@@ -6,17 +6,18 @@
 }
 
 .visual-shadow {
-  background-color: $shadow;
+  width: 100%;
   margin-top: 90px;
   padding: 200px 0 214px;
   text-align: center;
+  background-color: $shadow;
 
   @media (max-width: $df-tablet) {
-    padding: 180px 0 190px;
+    padding: 180px 10px 190px;
   }
 
   @media (max-width: $df-mobile) {
-    padding: 110px 0 100px;
+    padding: 110px 16px 100px;
     margin-top: 70px;
   }
 }
