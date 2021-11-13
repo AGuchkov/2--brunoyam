@@ -1,9 +1,15 @@
 console.log('script work!');
 const burger = document.querySelector('.burger');
 const burgerWrap = document.querySelector('.burger-wrap');
-const burgerInner = document.querySelector('.burger-inner');
+const burgerInner = document.querySelectorAll('.burger-inner');
+
+let example = function (a) {
+  a.classList.toggle('burger-inner-active')
+};
 
 burger.addEventListener("click", function (e) {
   burgerWrap.classList.toggle('burger-wrap-active');
-
+  for (i = 0; i < burgerInner.length; i++) {
+    example(burgerInner[i]);
+  }
 });
