@@ -14,6 +14,14 @@
 
 .cat-main {
   padding: 220px 0 130px;
+
+  @media (max-width: $df-tablet) {
+    padding: 210px 10px 130px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 160px 16px 130px;
+  }
 }
 
 .cat-inner {
@@ -33,18 +41,22 @@
   }
 }
 
-.cat-title-category {
+.category-title {
   margin-bottom: 80px;
 }
 
-.cat-category-wrap {
-  display: flex;
-  justify-content: center;
+.category-list {
   margin-bottom: 30px;
+
+  @media (max-width: $df-tablet) {
+    white-space: nowrap;
+    overflow: scroll;
+    overflow-y: hidden
+  }
 }
 
-.cat-category-link {
-  margin-left: 40px;
+.category-link {
+  padding: 0 25px;
   font-family: $font;
   font-weight: 600;
   font-size: 22px;
@@ -53,13 +65,12 @@
   text-decoration: none;
   color: inherit;
 
-  &:first-child {
-    margin-left: 0;
+  @media (max-width: $df-tablet) {
+    padding: 0 15px;
   }
 
-  &:hover {
-    color: $color-red;
-    transition: all .5s;
+  @media (max-width: $df-mobile) {
+    padding: 0 10px;
   }
 }
 

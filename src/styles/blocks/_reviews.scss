@@ -2,6 +2,14 @@
   padding: 220px 0 130px;
   text-align: center;
   background-color: rgba($color-dark, .01);
+
+  @media (max-width: $df-tablet) {
+    padding: 210px 10px 120px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 160px 16px 90px;
+  }
 }
 
 .reviews-inner {
@@ -22,19 +30,38 @@
 .review {
   display: flex;
   justify-content: center;
-  text-align: left;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
 }
 
-.review-avatar {
+.review-avatar-wrap {
   flex-basis: 37.5%;
   flex-shrink: 0;
   flex-grow: 0;
-  max-width: 304px;
-  max-height: 304px;
+  position: relative;
+
+  @media (max-width: $df-mobile) {
+    padding-top: 100%;
+  }
+}
+
+.review-avatar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.review-avatar {
+  width: 100%;
+  height: 100%;
   background-image: url("../images/avatar.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   border-radius: 50%;
 }
 
@@ -43,6 +70,13 @@
   flex-shrink: 0;
   flex-grow: 0;
   padding: 33px 22px;
+  text-align: left;
+
+  @media (max-width: $df-mobile) {
+    padding: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
 }
 
 .review-name {
@@ -50,10 +84,36 @@
   margin-bottom: 40px;
   font-size: 48px;
   line-height: 65px;
+
+  @media (max-width: $df-tablet) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media (max-width: $df-mobile) {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+.review-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .review-text {
   margin: 0;
   font-size: 24px;
   line-height: 33px;
+
+  @media (max-width: $df-tablet) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

@@ -34,9 +34,27 @@
   height: 60px;
   padding: 0;
   background-image: url("../images/icon-arrow.svg");
+  background-size: cover;
   border-radius: 50%;
   border: none;
   cursor: pointer;
+
+  @media (max-width: $df-tablet) {
+    width: 44px;
+    height: 44px;
+  }
+
+  @media (max-width: $df-mobile) {
+    display: none;
+  }
+}
+
+.arrow-mobile {
+  display: none;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
 }
 
 .arrow-right {
