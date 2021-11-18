@@ -41,39 +41,6 @@
   }
 }
 
-.category-title {
-  margin-bottom: 80px;
-}
-
-.category-list {
-  margin-bottom: 30px;
-
-  @media (max-width: $df-tablet) {
-    white-space: nowrap;
-    overflow: scroll;
-    overflow-y: hidden
-  }
-}
-
-.category-link {
-  padding: 0 25px;
-  font-family: $font;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 24px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: inherit;
-
-  @media (max-width: $df-tablet) {
-    padding: 0 15px;
-  }
-
-  @media (max-width: $df-mobile) {
-    padding: 0 10px;
-  }
-}
-
 .cat-list {
   display: flex;
   flex-wrap: wrap;

@@ -1,0 +1,48 @@
+.filter-title {
+  margin-bottom: 80px;
+}
+
+.filter {
+  margin-bottom: 30px;
+
+  &.active {
+    color: $color-red;
+  }
+  
+  @media (max-width: $df-tablet) {
+    white-space: nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+}
+
+.filter-link {
+  margin: 0 25px;
+  font-family: $font;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+
+  @media (max-width: $df-tablet) {
+    margin: 0 15px;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.active {
+  color: $color-red;
+}

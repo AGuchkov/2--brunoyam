@@ -2,6 +2,14 @@
   padding: 130px 0;
   margin-top: 90px;
   background-color: rgba($color-dark, .01);
+
+  @media (max-width: $df-tablet) {
+    padding: 120px 10px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 90px 10px;
+  }
 }
 
 .faq-inner {
@@ -10,14 +18,26 @@
 
 .faq-title {
   @include title-h2;
-  margin-bottom: 77px;
+  margin-bottom: 80px;
   text-align: center;
+
+  @media (max-width: $df-tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 50px;
+  }
 }
 
 .faq-item {
   padding: 25px 30px;
   margin-bottom: 40px;
   border: 1px solid rgba($color-red, .2);
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 20px;
+  }
 }
 
 .faq-item:last-child {
@@ -27,6 +47,11 @@
 .faq-wrap {
   display: flex;
   align-items: center;
+  margin-bottom: 25px;
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 15px;
+  }
 }
 
 .faq-subtitle {
@@ -35,13 +60,32 @@
   font-weight: 300;
   font-size: 36px;
   line-height: 49px;
+
+  @media (max-width: $df-tablet) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  @media (max-width: $df-mobile) {
+    font-size: 20px;
+    line-height: 27px;
+  }
 }
 
 .faq-text {
   display: none;
   margin: 0;
-  margin-top: 25px;
   font-weight: 300;
   font-size: 18px;
   line-height: 25px;
+
+  @media (max-width: $df-tablet) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $df-mobile) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
