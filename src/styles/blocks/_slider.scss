@@ -1,0 +1,52 @@
+.slider {
+  position: relative;
+  padding: 0 188px;
+
+  @media (max-width: $df-tablet) {
+    padding: 0 64px;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    font-size: 0;
+    background-image: url("../images/icon-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media (max-width: $df-tablet) {
+      width: 44px;
+      height: 44px;
+    }
+
+    @media (max-width: $df-mobile) {
+      top: 50%;
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $df-mobile) {
+      display: block;
+    }
+  }
+}

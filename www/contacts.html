@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Butterfly shop</title>
   <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
   <header class="header">
     <div class="header-inner">
@@ -15,16 +17,12 @@
           <ul>
             <li><a href="cat.html">Каталог</a></li>
             <li><a href="reviews.htm">Отзывы</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
             <li><a href="faq.html">FAQ</a></li>
           </ul>
         </nav>
         <button class="burger" type="button">
-          <span class="burger-wrap">
-              <span class="burger-inner"></span>
-              <span class="burger-inner"></span>
-              <span class="burger-inner"></span>
-          </span>
+          <span class="burger-inner">Меню</span>
         </button>
       </div>
     </div>
@@ -46,29 +44,38 @@
         </ul>
         <div class="contacts-content active">
           <div class="contacts-info">
-            <p>Ереванская улица, д. 68 к4</p>
+            <p>переулок Гривцова, 6Б</p>
             <p>Тел: +7 (920) 628-06-39</p>
             <p>Пн-Пт с 9-00 до 20-00</p>
           </div>
           <div class="contacts-map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa23ada80f8d3d77ad2e27840c18a677c8332117eddf0b8dc3fd800eb603099d2&amp;source=constructor"
+              width="100%" height="400" frameborder="0"></iframe>
           </div>
         </div>
         <div class="contacts-content">
           <div class="contacts-info">
-            <p>Улица Баумана, д. 228</p>
+            <p>Большой Трёхгорный переулок, 15с1</p>
             <p>Тел: +7 (920) 268-95-68</p>
             <p>Пн-Пт с 10-00 до 20-00</p>
           </div>
           <div class="contacts-map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad07fd502a26ec496d142394cf9bf235daed67cdbc090a91e5550ff0eff684d06&amp;source=constructor"
+              width="100%" height="400" frameborder="0"></iframe>
           </div>
         </div>
         <div class="contacts-content">
           <div class="contacts-info">
-            <p>Улица Жебрунова, д. 34</p>
+            <p>Чудинцева улица, 9</p>
             <p>Тел: +7 (920) 017-74-67</p>
             <p class="lord-rings">You shall not pass!</p>
           </div>
           <div class="contacts-map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A6bbe4d457f78a5682daeaa3ff471e14e923b679c1c03ffe1c46718078ce4248d&amp;source=constructor"
+              width="100%" height="400" frameborder="0"></iframe>
           </div>
         </div>
       </div>
@@ -76,7 +83,8 @@
     <section class="order">
       <div class="order-inner">
         <h2 class="order-title">Закажи пошив</h2>
-        <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На встрече он снимет мерки и поможет обределиться с тканью.</p>
+        <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
+          встрече он снимет мерки и поможет обределиться с тканью.</p>
         <form action="#" class="order-form form">
           <div class="form-field">
             <label for="name" class="form-label">Ваше имя</label>
@@ -121,4 +129,5 @@
   <script src="scripts/jquery-3.6.0.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
+
 </html>

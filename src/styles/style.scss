@@ -4,6 +4,7 @@
 @import "common/_mixins";
 @import "common/normalize";
 @import "common/_common";
+@import "plugins/slick";
 
 // blocks
 @import "blocks/_header";
@@ -13,8 +14,10 @@
 @import "blocks/_cat";
 @import "blocks/_filter";
 @import "blocks/_reviews";
+@import "blocks/_slider";
 @import "blocks/_contacts";
 @import "blocks/_faq";
 @import "blocks/_order";
 @import "blocks/_form";
 @import "blocks/_footer";
+

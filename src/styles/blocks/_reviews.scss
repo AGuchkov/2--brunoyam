@@ -19,24 +19,18 @@
 .reviews-title {
   @include title-h2;
   margin-bottom: 80px;
-}
 
-.reviews-wrap {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.review {
-  display: flex;
-  justify-content: center;
+  @media (max-width: $df-tablet) {
+    margin-bottom: 70px;
+  }
 
   @media (max-width: $df-mobile) {
-    display: block;
+    margin-bottom: 50px;
   }
 }
 
 .review-avatar-wrap {
+  padding-top: 40%;
   flex-basis: 37.5%;
   flex-shrink: 0;
   flex-grow: 0;
@@ -91,14 +85,11 @@
   }
 
   @media (max-width: $df-mobile) {
+    margin-bottom: 0;
     font-size: 24px;
     line-height: 33px;
+    word-spacing: 1000px;
   }
-}
-
-.review-wrap {
-  display: flex;
-  justify-content: space-between;
 }
 
 .review-text {

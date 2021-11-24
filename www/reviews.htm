@@ -16,17 +16,13 @@
         <nav class="main-nav">
           <ul>
             <li><a href="cat.html">Каталог</a></li>
-            <li><a href="reviews.htm">Отзывы</a></li>
+            <li><a href="reviews.htm" class="active">Отзывы</a></li>
             <li><a href="contacts.html">Контакты</a></li>
             <li><a href="faq.html">FAQ</a></li>
           </ul>
         </nav>
         <button class="burger" type="button">
-          <span class="burger-wrap">
-            <span class="burger-inner"></span>
-            <span class="burger-inner"></span>
-            <span class="burger-inner"></span>
-          </span>
+          <span class="burger-inner">Меню</span>
         </button>
       </div>
     </div>
@@ -35,8 +31,7 @@
     <section class="reviews">
       <div class="reviews-inner">
         <h1 class="reviews-title">Отзывы</h1>
-        <div class="reviews-wrap">
-          <button class="arrow"></button>
+        <div class="slider">
           <div class="review">
             <div class="review-avatar-wrap">
               <div class="review-avatar-inner">
@@ -45,16 +40,34 @@
             </div>
             <div class="review-desc">
               <h2 class="review-name">Лидия Ивановна</h2>
-              <div class="review-wrap">
-                <button class="arrow arrow-mobile"></button>
-                <p class="review-text">Пацаны красавчики! Быстро и аккуратно починили мой лододос!
-                  <br> А так же вынесли за собой весь мусор! Еще и в шапке ходют - ван лав!
-                </p>
-                <button class="arrow arrow-mobile arrow-right"></button>
-              </div>
+              <p class="review-text">Пацаны красавчики! Быстро и аккуратно починили мой лододос!</p>
+              <p class="review-text">А так же вынесли за собой весь мусор! Еще и в шапке ходют - ван лав!</p>
             </div>
           </div>
-          <button class="arrow arrow-right"></button>
+          <div class="review">
+            <div class="review-avatar-wrap">
+              <div class="review-avatar-inner">
+                <div class="review-avatar"></div>
+              </div>
+            </div>
+            <div class="review-desc">
+              <h2 class="review-name">Лидия Ивановна</h2>
+              <p class="review-text">Пацаны красавчики! Быстро и аккуратно починили мой лододос!</p>
+              <p class="review-text">А так же вынесли за собой весь мусор! Еще и в шапке ходют - ван лав!</p>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-avatar-wrap">
+              <div class="review-avatar-inner">
+                <div class="review-avatar"></div>
+              </div>
+            </div>
+            <div class="review-desc">
+              <h2 class="review-name">Лидия Ивановна</h2>
+              <p class="review-text">Пацаны красавчики! Быстро и аккуратно починили мой лододос!</p>
+              <p class="review-text">А так же вынесли за собой весь мусор! Еще и в шапке ходют - ван лав!</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -105,6 +118,7 @@
     </div>
   </footer>
   <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 

@@ -3,12 +3,16 @@
 }
 
 .filter {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+
+  &::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0);
+  }
 
   &.active {
     color: $color-red;
   }
-  
+
   @media (max-width: $df-tablet) {
     white-space: nowrap;
     overflow: scroll;

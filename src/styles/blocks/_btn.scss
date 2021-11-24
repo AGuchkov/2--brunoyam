@@ -27,77 +27,10 @@
   line-height: 34px;
 }
 
-.arrow {
-  flex-shrink: 0;
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  padding: 0;
-  background-image: url("../images/icon-arrow.svg");
-  background-size: cover;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-
-  @media (max-width: $df-tablet) {
-    width: 44px;
-    height: 44px;
-  }
-
-  @media (max-width: $df-mobile) {
-    display: none;
-  }
-}
-
-.arrow-mobile {
-  display: none;
-
-  @media (max-width: $df-mobile) {
-    display: block;
-  }
-}
-
-.arrow-right {
-  transform: rotate(180deg);
-}
-
-.plus {
-  display: block;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background-color: inherit;
-  border: none;
-
-  @media (max-width: $df-mobile) {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.plus-inner {
-  display: inline-block;
-  position: absolute;
-  top: calc(50% - 1px);
-  left: 0;
-  width: 100%;
-  background-color: $color-red;
-  border: 2px solid $color-red;
-  transition: all .3s;
-}
-
-.plus-inner:last-child {
-  transform: rotate(90deg);
-  top: calc(50% - 2px);
-}
-
-.plus-inner-active {
-  display: none;
-}
-
-.plus-inner-active:last-child {
-  display: inline-block;
-  top: calc(50% - 1px);
-  transform: rotate(0deg);
+.load {
+  font-size: 0;
+  background-image: url("../images/loading.gif");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: center;
 }

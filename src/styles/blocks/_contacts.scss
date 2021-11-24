@@ -27,6 +27,10 @@
   padding-left: 0;
   list-style: none;
 
+  &::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
   @media (max-width: $df-tablet) {
     margin-top: 70px;
   }
@@ -79,7 +83,7 @@
 
   &.active {
     display: flex;
-  
+
     @media (max-width: $df-mobile) {
       display: block;
     }

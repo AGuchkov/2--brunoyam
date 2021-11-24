@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Butterfly shop</title>
   <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
   <header class="header">
     <div class="header-inner">
@@ -20,11 +22,7 @@
           </ul>
         </nav>
         <button class="burger" type="button">
-          <span class="burger-wrap">
-              <span class="burger-inner"></span>
-              <span class="burger-inner"></span>
-              <span class="burger-inner"></span>
-          </span>
+          <span class="burger-inner">Меню</span>
         </button>
       </div>
     </div>
@@ -34,7 +32,7 @@
       <div class="visual-shadow">
         <div class="visual-inner">
           <h1 class="visual-title">Индивидуальный пошив галсутков-бабочек</h1>
-          <a href="" class="btn">Заказать бабочку</a>
+          <a href="#order" class="btn">Заказать бабочку</a>
         </div>
       </div>
     </section>
@@ -82,10 +80,11 @@
         <a href="cat.html" class="btn">Все бабочки</a>
       </div>
     </section>
-    <section class="order">
+    <section class="order" id="order">
       <div class="order-inner">
         <h2 class="order-title">Закажи пошив</h2>
-        <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На встрече он снимет мерки и поможет обределиться с тканью.</p>
+        <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
+          встрече он снимет мерки и поможет обределиться с тканью.</p>
         <form action="#" class="order-form form">
           <div class="form-field">
             <label for="name" class="form-label">Ваше имя</label>
@@ -133,4 +132,5 @@
   <script src="scripts/jquery-3.6.0.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
+
 </html>
