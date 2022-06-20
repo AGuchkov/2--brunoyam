@@ -1,0 +1,22 @@
+{
+  "isShowMore": true,
+  "cat": [
+    {
+      "dataType": "strict",
+      "bgUrl": "../images/portfolio-bg-cart1.jpg",
+      "catItemText": "Бабочка такая"
+    }, {
+      "dataType": "funny",
+      "bgUrl": "../images/portfolio-bg-cart2.jpg",
+      "catItemText": "Бабочка растакая"
+    }, {
+      "dataType": "for-pets",
+      "bgUrl": "../images/portfolio-bg-cart3.jpg",
+      "catItemText": "Бабочка сякая"
+    }, {
+      "dataType": "baby",
+      "bgUrl": "../images/portfolio-bg-cart4.jpg",
+      "catItemText": "Кривая"
+    }
+  ]
+}
